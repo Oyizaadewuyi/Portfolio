@@ -74,6 +74,12 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import lexicon from '../assets/images/lexicon.jpg'
+import skincare from '../assets/images/skincare.jpg'
+import bulwark from '../assets/images/bulwark.jpg'
+import timbu from '../assets/images/timbu.jpg'
+import port from '../assets/images/port.png'
+
 
 // Sample project data with unique images
 const projects = [
@@ -82,30 +88,37 @@ const projects = [
     id: 1,
     title: "Portfolio Website",
     description: "A Portfolio page built using React and Tailwind CSS.",
-    image: "/images/ecommerce-page.png", // Unique Image
-    link: "https://your-ecommerce-project-link.com",
+    image: port, // Unique Image
+    link: "https://portfolio-1fll.vercel.app/",
   },
   {
     id: 2,
     title: "Skincare Landing Page",
     description: "A responsive landing page built with HTML and CSS.",
-    image: "/images/skincare-landing.png", // Unique Image
+    image: skincare, // Unique Image
     link: "https://skincare-landing-page.vercel.app/",
     github:"https://github.com/Oyizaadewuyi/skincareLandingPage.git",
   },
   {
     id: 3,
-    title: "E-commerce Product Page",
+    title: "Timbu (E-commerce Product Page)",
     description: "A product display page using React and Tailwind CSS.",
-    image: "/images/ecommerce-page.png", // Unique Image
-    link: "https://your-ecommerce-project-link.com",
+    image: timbu, // Unique Image
+    link: "https://hng-timbu-shop.vercel.app/",
   },
   {
     id: 4,
-    title: "Portfolio Website",
-    description: "A personal portfolio built with React and Tailwind CSS.",
-    image: "/images/portfolio-project.png", // Unique Image
-    link: "https://your-portfolio-link.com",
+    title: "Lexicon",
+    description: "A Mini dictionary built using Html and Css with open API of Dictionary...",
+    image: lexicon, // Unique Image
+    link: "https://january-project.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Bulwark",
+    description: "An Anti-virus website page built using React,tailwindCss and CSS. for Tech4dev fellowship capstone project...i built the navigation bars, Hero page and product page.",
+    image: bulwark, // Unique Image
+    link: "https://bluwark-project.vercel.app/",
   },
 ];
 
@@ -124,8 +137,8 @@ const itemVariants = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-gray-900 py-12 px-6">
-      <h2 className="text-4xl font-bold text-center mb-8 text-red-600">
+    <section id="projects" className="bg-gradient-to-r from-gray-900 to-pink-600 py-12 px-6">
+      <h2 className="text-4xl font-bold text-center mb-8 text-cyan-500 hover:cyan">
         My Projects
       </h2>
 
@@ -139,7 +152,7 @@ const Projects = () => {
         {projects.map((project) => (
           <motion.div
             key={project.id}
-            className="bg-white shadow-lg rounded-lg overflow-hidden"
+            className="bg-gray-900 shadow-lg rounded-lg overflow-hidden"
             variants={itemVariants}
           >
             {/* Display each project's unique image */}
@@ -149,7 +162,7 @@ const Projects = () => {
               className="w-full h-56 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-gray-800">
+              <h3 className="text-2xl font-semibold text-gray-200">
                 {project.title}
               </h3>
               <p className="text-gray-600 my-3">{project.description}</p>
@@ -157,7 +170,7 @@ const Projects = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-red-500 font-bold hover:underline"
+                className="text-cyan-500 font-bold hover:underline"
               >
                 View Project →
               </a>

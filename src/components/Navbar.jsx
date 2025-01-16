@@ -7,9 +7,9 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false); // Track menu state
 
   return (
-    <nav className="bg-cyan-900 text-white fixed w-full z-10">
+    <nav className="bg-gradient-to-r from-pink-600 to-cyan-900 text-white fixed w-full z-10">
       <div className="flex justify-between items-center px-6 py-4">
-         <h1 className="text-3xl font-signature text-gray-200" >RAY</h1>
+         <h1 className="text-3xl font-signature font-bold text-cyan-900" >RAY</h1>
 
         {/* Hamburger Icon - Appears on Mobile */}
         <div className="lg:hidden">

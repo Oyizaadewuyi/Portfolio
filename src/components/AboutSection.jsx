@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="p-10  text-center bg-gradient-to-r from-gray-800 to-gray-700">
+    <section id="about" className="p-10  text-center bg-gradient-to-r from-pink-600 to-gray-700">
       <h2 className="text-3xl md:text-3xl font-bold text-cyan-500 lg:text-left hover:text-cyan-800">About Me</h2>
       <p className="text-gray-200 mt-4 max-w-3xl mx-auto text-s">
       I’m Adewuyi Raihanat, a passionate Frontend Developer dedicated to building clean, responsive, and user-friendly web experiences. With expertise in HTML, CSS, JavaScript, React, and Tailwind CSS, I craft visually appealing and intuitive interfaces that enhance user engagement.
