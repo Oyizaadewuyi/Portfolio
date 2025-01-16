@@ -10,6 +10,7 @@ const Footer = () => {
     <br />
     <br />
     <br />
+    <br/>
     </footer>
   );
 };
